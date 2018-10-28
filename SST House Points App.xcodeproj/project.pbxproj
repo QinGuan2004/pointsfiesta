@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250986F720F9E8F40003D8F6 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250986F620F9E8F40003D8F6 /* userInfo.swift */; };
+		250C5CAA20F9E8BD00129259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C5CA920F9E8BD00129259 /* AppDelegate.swift */; };
+		250C5CAC20F9E8BD00129259 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C5CAB20F9E8BD00129259 /* MainPageViewController.swift */; };
+		250C5CAF20F9E8BD00129259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CAD20F9E8BD00129259 /* Main.storyboard */; };
+		250C5CB120F9E8BF00129259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CB020F9E8BF00129259 /* Assets.xcassets */; };
+		250C5CB420F9E8BF00129259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */; };
+		253244832133016300508027 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253244822133016300508027 /* AnnouncementViewController.swift */; };
+		25371B1E212C760D00910227 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25371B1D212C760D00910227 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2563FB522180DD8E00F16D59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */; };
+		25B170E7211E9F020079955A /* HouseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B170E6211E9F020079955A /* HouseSelectionViewController.swift */; };
+		25D2404E2118403F00EC550C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2404D2118403F00EC550C /* SignInViewController.swift */; };
+		25DC2BCC21156D18001D3DF2 /* HouseDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC2BCB21156D18001D3DF2 /* HouseDescriptionViewController.swift */; };
+		25DC2BCE21156D7A001D3DF2 /* RankingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */; };
+		25EBF43F2128623F004C9D24 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EBF43E2128623F004C9D24 /* PageViewController.swift */; };
+		ECFC79F50FCD3CE118C1C987 /* Pods_SST_House_Points_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FB902DD0537AF91B27F4D3 /* Pods_SST_House_Points_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		250986F620F9E8F40003D8F6 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		250C5CA620F9E8BD00129259 /* SST House Points App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SST House Points App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		250C5CA920F9E8BD00129259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		250C5CAB20F9E8BD00129259 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		250C5CAE20F9E8BD00129259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		250C5CB020F9E8BF00129259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		250C5CB320F9E8BF00129259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		250C5CB520F9E8BF00129259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253244822133016300508027 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		25371B1D212C760D00910227 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		25545BA020FE079B00674B0E /* SST House Points App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SST House Points App.entitlements"; sourceTree = "<group>"; };
+		2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		257518B720FC7D08007C11BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		25B170E6211E9F020079955A /* HouseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSelectionViewController.swift; sourceTree = "<group>"; };
+		25D2404D2118403F00EC550C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		25DC2BCB21156D18001D3DF2 /* HouseDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDescriptionViewController.swift; sourceTree = "<group>"; };
+		25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsViewController.swift; sourceTree = "<group>"; };
+		25EBF43E2128623F004C9D24 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		45FB902DD0537AF91B27F4D3 /* Pods_SST_House_Points_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SST_House_Points_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFAF299BDC3ECA5D59A45ED /* Pods-SST House Points App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SST House Points App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD47BB29658581D708D8C83 /* Pods-SST House Points App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SST House Points App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		250C5CA320F9E8BD00129259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC79F50FCD3CE118C1C987 /* Pods_SST_House_Points_App.framework in Frameworks */,
+				25371B1E212C760D00910227 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250C5C9D20F9E8BD00129259 = {
+			isa = PBXGroup;
+			children = (
+				250C5CA820F9E8BD00129259 /* SST House Points App */,
+				250C5CA720F9E8BD00129259 /* Products */,
+				26737D60205D63AC7CA4D8C3 /* Pods */,
+				6478207424514E8892793AF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		250C5CA720F9E8BD00129259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250C5CA620F9E8BD00129259 /* SST House Points App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		250C5CA820F9E8BD00129259 /* SST House Points App */ = {
+			isa = PBXGroup;
+			children = (
+				25545BA020FE079B00674B0E /* SST House Points App.entitlements */,
+				250C5CA920F9E8BD00129259 /* AppDelegate.swift */,
+				250C5CAD20F9E8BD00129259 /* Main.storyboard */,
+				25D2404D2118403F00EC550C /* SignInViewController.swift */,
+				25B170E6211E9F020079955A /* HouseSelectionViewController.swift */,
+				25EBF43E2128623F004C9D24 /* PageViewController.swift */,
+				250C5CAB20F9E8BD00129259 /* MainPageViewController.swift */,
+				25DC2BCB21156D18001D3DF2 /* HouseDescriptionViewController.swift */,
+				253244822133016300508027 /* AnnouncementViewController.swift */,
+				25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */,
+				2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */,
+				250C5CB020F9E8BF00129259 /* Assets.xcassets */,
+				250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */,
+				250C5CB520F9E8BF00129259 /* Info.plist */,
+				250986F620F9E8F40003D8F6 /* userInfo.swift */,
+			);
+			path = "SST House Points App";
+			sourceTree = "<group>";
+		};
+		26737D60205D63AC7CA4D8C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DFAF299BDC3ECA5D59A45ED /* Pods-SST House Points App.debug.xcconfig */,
+				8FD47BB29658581D708D8C83 /* Pods-SST House Points App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6478207424514E8892793AF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25371B1D212C760D00910227 /* HealthKit.framework */,
+				45FB902DD0537AF91B27F4D3 /* Pods_SST_House_Points_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		250C5CA520F9E8BD00129259 /* SST House Points App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250C5CB820F9E8BF00129259 /* Build configuration list for PBXNativeTarget "SST House Points App" */;
+			buildPhases = (
+				49FB047F63868B935D8F74C0 /* [CP] Check Pods Manifest.lock */,
+				250C5CA220F9E8BD00129259 /* Sources */,
+				250C5CA320F9E8BD00129259 /* Frameworks */,
+				250C5CA420F9E8BD00129259 /* Resources */,
+				BA1F98D38DAF0E744B51612F /* [CP] Embed Pods Frameworks */,
+				66C8D486DA87FFE06C222841 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SST House Points App";
+			productName = "SST House Points App";
+			productReference = 250C5CA620F9E8BD00129259 /* SST House Points App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		250C5C9E20F9E8BD00129259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = SebastianChoo.Co;
+				TargetAttributes = {
+					250C5CA520F9E8BD00129259 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 250C5CA120F9E8BD00129259 /* Build configuration list for PBXProject "SST House Points App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 250C5C9D20F9E8BD00129259;
+			productRefGroup = 250C5CA720F9E8BD00129259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				250C5CA520F9E8BD00129259 /* SST House Points App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		250C5CA420F9E8BD00129259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250C5CB420F9E8BF00129259 /* LaunchScreen.storyboard in Resources */,
+				2563FB522180DD8E00F16D59 /* GoogleService-Info.plist in Resources */,
+				250C5CB120F9E8BF00129259 /* Assets.xcassets in Resources */,
+				250C5CAF20F9E8BD00129259 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49FB047F63868B935D8F74C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SST House Points App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C8D486DA87FFE06C222841 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1F98D38DAF0E744B51612F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		250C5CA220F9E8BD00129259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250C5CAC20F9E8BD00129259 /* MainPageViewController.swift in Sources */,
+				25EBF43F2128623F004C9D24 /* PageViewController.swift in Sources */,
+				250986F720F9E8F40003D8F6 /* userInfo.swift in Sources */,
+				25DC2BCE21156D7A001D3DF2 /* RankingsViewController.swift in Sources */,
+				250C5CAA20F9E8BD00129259 /* AppDelegate.swift in Sources */,
+				25DC2BCC21156D18001D3DF2 /* HouseDescriptionViewController.swift in Sources */,
+				25D2404E2118403F00EC550C /* SignInViewController.swift in Sources */,
+				25B170E7211E9F020079955A /* HouseSelectionViewController.swift in Sources */,
+				253244832133016300508027 /* AnnouncementViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		250C5CAD20F9E8BD00129259 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250C5CAE20F9E8BD00129259 /* Base */,
+				257518B720FC7D08007C11BF /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250C5CB320F9E8BF00129259 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		250C5CB620F9E8BF00129259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		250C5CB720F9E8BF00129259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		250C5CB920F9E8BF00129259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFAF299BDC3ECA5D59A45ED /* Pods-SST House Points App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SST House Points App/SST House Points App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRQ55NALR3;
+				INFOPLIST_FILE = "SST House Points App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SC.Co.SST-House-Points-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		250C5CBA20F9E8BF00129259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD47BB29658581D708D8C83 /* Pods-SST House Points App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SST House Points App/SST House Points App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRQ55NALR3;
+				INFOPLIST_FILE = "SST House Points App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SC.Co.SST-House-Points-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250C5CA120F9E8BD00129259 /* Build configuration list for PBXProject "SST House Points App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250C5CB620F9E8BF00129259 /* Debug */,
+				250C5CB720F9E8BF00129259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250C5CB820F9E8BF00129259 /* Build configuration list for PBXNativeTarget "SST House Points App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250C5CB920F9E8BF00129259 /* Debug */,
+				250C5CBA20F9E8BF00129259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 250C5C9E20F9E8BD00129259 /* Project object */;
+}
