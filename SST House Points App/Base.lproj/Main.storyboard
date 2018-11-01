@@ -467,9 +467,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-op-N27">
-                                <rect key="frame" x="16" y="154" width="343" height="344"/>
+                                <rect key="frame" x="8.5" y="154" width="358" height="359"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Nae-op-N27" secondAttribute="height" multiplier="343:344" id="9GO-5V-Jpb"/>
+                                    <constraint firstAttribute="width" secondItem="Nae-op-N27" secondAttribute="height" multiplier="343:344" id="ImA-j7-Ax3"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ak-Sq-uBc">
@@ -479,7 +479,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFT-Zc-JsB">
-                                <rect key="frame" x="10" y="538" width="355" height="36"/>
+                                <rect key="frame" x="10" y="556" width="355" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -488,15 +488,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="yFT-Zc-JsB" firstAttribute="top" secondItem="Nae-op-N27" secondAttribute="bottom" constant="40" id="5cY-Ww-41h"/>
-                            <constraint firstItem="4ak-Sq-uBc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6uV-bT-ito"/>
-                            <constraint firstItem="yFT-Zc-JsB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Qh2-gx-YLF"/>
-                            <constraint firstItem="Nae-op-N27" firstAttribute="top" secondItem="4ak-Sq-uBc" secondAttribute="bottom" constant="40" id="RtZ-mc-zLw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yFT-Zc-JsB" secondAttribute="trailing" constant="10" id="Uix-a3-nip"/>
-                            <constraint firstItem="4ak-Sq-uBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UvW-Kb-9wO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ak-Sq-uBc" secondAttribute="trailing" constant="10" id="V2X-Kq-sM4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nae-op-N27" secondAttribute="trailing" constant="16" id="V3O-Jn-q8J"/>
-                            <constraint firstItem="Nae-op-N27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XAg-dI-xj4"/>
+                            <constraint firstItem="yFT-Zc-JsB" firstAttribute="top" secondItem="Nae-op-N27" secondAttribute="bottom" constant="43" id="4Ve-Vb-hNN"/>
+                            <constraint firstItem="Nae-op-N27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6FP-zA-fQO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ak-Sq-uBc" secondAttribute="trailing" constant="10" id="BJJ-IG-UkS"/>
+                            <constraint firstItem="yFT-Zc-JsB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Twu-uB-Pp0"/>
+                            <constraint firstItem="4ak-Sq-uBc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="WyO-ne-Nqg"/>
+                            <constraint firstItem="Nae-op-N27" firstAttribute="top" secondItem="4ak-Sq-uBc" secondAttribute="bottom" constant="40" id="aHl-no-bpN"/>
+                            <constraint firstItem="Nae-op-N27" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kd4-ct-XgB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yFT-Zc-JsB" secondAttribute="trailing" constant="10" id="oKm-RL-nMc"/>
+                            <constraint firstItem="4ak-Sq-uBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uBP-Ls-wtW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
