@@ -13,6 +13,7 @@ import FirebaseAuth
 class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
 
 
+    @IBOutlet weak var Points: UILabel!
     @IBOutlet var googleSignInButton: GIDSignInButton!
 
     @IBAction func didTapSignOut(_ sender: AnyObject) {
@@ -56,6 +57,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Points.text = "Points\n This app hopes to increase the House Culture in SST."
 // Setting Background Colour (Gradient)
         let layer = CAGradientLayer()
         layer.frame = view.bounds
