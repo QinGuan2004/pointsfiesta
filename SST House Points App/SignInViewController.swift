@@ -57,7 +57,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Points.text = "Points\n This app hopes to increase the House Culture in SST."
+        Points.text = "Points\n This app hopes to increase the House Culture in SST. \nSign in to Google with your SST Google Account."
 // Setting Background Colour (Gradient)
         let layer = CAGradientLayer()
         layer.frame = view.bounds
