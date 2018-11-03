@@ -54,19 +54,19 @@ class MainPageViewController: UIViewController {
         // Section 2: House Details
                 self.ref.child("houseInfo").child("1").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "House Captain:\n\(houseCaptain)"
+                    self.captainLabel.text = "\(houseCaptain)"
                 }
                 self.ref.child("houseInfo").child("1").child("3").observeSingleEvent(of: .value) { (snapshot) in
                     viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "House Vice Captain:\n\(viceHouseCaptain)"
+                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
                 }
                 self.ref.child("houseInfo").child("1").child("4").observeSingleEvent(of: .value) { (snapshot) in
                     houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "House Master:\n\(houseMaster)"
+                    self.masterLabel.text = "\(houseMaster)"
                 }
                 self.ref.child("houseInfo").child("1").child("6").observeSingleEvent(of: .value) { (snapshot) in
                     meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "Meeting Location:\n\(meetingLocation)"
+                    self.meetingLabel.text = "\(meetingLocation)"
                 }
             }
         case "Red House":
@@ -78,19 +78,19 @@ class MainPageViewController: UIViewController {
         // Section 2: House Details
                 self.ref.child("houseInfo").child("2").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "House Captain:\n\(houseCaptain)"
+                    self.captainLabel.text = "\(houseCaptain)"
                 }
                 self.ref.child("houseInfo").child("2").child("3").observeSingleEvent(of: .value) { (snapshot) in
                     viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "House Vice Captain:\n\(viceHouseCaptain)"
+                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
                 }
             self.ref.child("houseInfo").child("2").child("4").observeSingleEvent(of: .value) { (snapshot) in
                     houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "House Master:\n\(houseMaster)"
+                    self.masterLabel.text = "\(houseMaster)"
                 }
             self.ref.child("houseInfo").child("2").child("6").observeSingleEvent(of: .value) { (snapshot) in
                     meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "Meeting Location:\n\(meetingLocation)"
+                    self.meetingLabel.text = "\(meetingLocation)"
                 }
             
             }
@@ -104,19 +104,19 @@ class MainPageViewController: UIViewController {
         // Section 2: House Details
                 self.ref.child("houseInfo").child("3").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "House Captain:\n\(houseCaptain)"
+                    self.captainLabel.text = "\(houseCaptain)"
                 }
                 self.ref.child("houseInfo").child("3").child("3").observeSingleEvent(of: .value) { (snapshot) in
                     viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "House Vice Captain:\n\(viceHouseCaptain)"
+                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
                 }
                 self.ref.child("houseInfo").child("3").child("4").observeSingleEvent(of: .value) { (snapshot) in
                     houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "House Master:\n\(houseMaster)"
+                    self.masterLabel.text = "\(houseMaster)"
                 }
                 self.ref.child("houseInfo").child("3").child("6").observeSingleEvent(of: .value) { (snapshot) in
                     meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "Meeting Location:\n\(meetingLocation)"
+                    self.meetingLabel.text = "\(meetingLocation)"
                 }
             }
         case "Blue House":
@@ -128,19 +128,19 @@ class MainPageViewController: UIViewController {
         //Section 2: House Details
                 self.ref.child("houseInfo").child("4").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "House Captain:\n\(houseCaptain)"
+                    self.captainLabel.text = "\(houseCaptain)"
                 }
                 self.ref.child("houseInfo").child("4").child("3").observeSingleEvent(of: .value) { (snapshot) in
                     viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "House Vice Captain:\n\(viceHouseCaptain)"
+                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
                 }
                 self.ref.child("houseInfo").child("4").child("4").observeSingleEvent(of: .value) { (snapshot) in
                     houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "House Master:\n\(houseMaster)"
+                    self.masterLabel.text = "\(houseMaster)"
                 }
                 self.ref.child("houseInfo").child("4").child("6").observeSingleEvent(of: .value) { (snapshot) in
                     meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "Meeting Location:\n\(meetingLocation)"
+                    self.meetingLabel.text = "\(meetingLocation)"
                 }
             }
         case "Yellow House":
@@ -152,19 +152,19 @@ class MainPageViewController: UIViewController {
         //Section 2: House Details
                 self.ref.child("houseInfo").child("5").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "House Captain:\n\(houseCaptain)"
+                    self.captainLabel.text = "\(houseCaptain)"
                 }
                 self.ref.child("houseInfo").child("5").child("3").observeSingleEvent(of: .value) { (snapshot) in
                     viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "House Vice Captain:\n\(viceHouseCaptain)"
+                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
                 }
                 self.ref.child("houseInfo").child("5").child("4").observeSingleEvent(of: .value) { (snapshot) in
                     houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "House Master:\n\(houseMaster)"
+                    self.masterLabel.text = "\(houseMaster)"
                 }
                 self.ref.child("houseInfo").child("5").child("6").observeSingleEvent(of: .value) { (snapshot) in
                     meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "Meeting Location:\n\(meetingLocation)"
+                    self.meetingLabel.text = "\(meetingLocation)"
                 }
             }
         default:
