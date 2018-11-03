@@ -17,10 +17,10 @@ class MainPageViewController: UIViewController {
     //Blank Alert
     let alert = UIAlertController(title: "Connection Error", message: "Please check your connection and try again.", preferredStyle: .alert)
     var ref: DatabaseReference!
-    @IBOutlet weak var iconLabel: UIImageView!
-    @IBOutlet weak var houseLabel: UILabel!
-    @IBOutlet weak var mottoLabel: UILabel!
 
+    @IBOutlet weak var iconLabel: UIImageView!
+    @IBOutlet weak var mottoLabel: UILabel!
+    
     func addHouseIcon(house: String) {
         var icon: UIImage!
         icon = UIImage(named: house)
@@ -31,7 +31,6 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         view.backgroundColor = backgroundColour
-        houseLabel.textColor = .white
         mottoLabel.textColor = .white
 
         var houseMotto: String!
@@ -39,35 +38,30 @@ class MainPageViewController: UIViewController {
         switch currentHouse {
         case "Black House":
             addHouseIcon(house: "blackHouse")
-            houseLabel.text = "Black House"
             ref.child("houseInfo").child("1").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = houseMotto
             }
         case "Red House":
             addHouseIcon(house: "redHouse")
-            houseLabel.text = "Red House"
             ref.child("houseInfo").child("2").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = houseMotto
             }
         case "Green House":
             addHouseIcon(house: "greenHouse")
-            houseLabel.text = "Green House"
             ref.child("houseInfo").child("3").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = houseMotto
             }
         case "Blue House":
             addHouseIcon(house: "blueHouse")
-            houseLabel.text = "Blue House"
             ref.child("houseInfo").child("4").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = houseMotto
             }
         case "Yellow House":
             addHouseIcon(house: "yellowHouse")
-            houseLabel.text = "Yellow House"
             ref.child("houseInfo").child("5").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = houseMotto
@@ -78,6 +72,8 @@ class MainPageViewController: UIViewController {
             }))
             self.present(self.alert, animated: true, completion: nil)
         }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
