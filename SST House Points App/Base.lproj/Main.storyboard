@@ -78,7 +78,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyQ-hs-me2">
-                                <rect key="frame" x="60" y="344" width="255" height="48"/>
+                                <rect key="frame" x="60" y="394" width="255" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Green House">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azA-KS-XhL">
-                                <rect key="frame" x="60" y="228" width="255" height="48"/>
+                                <rect key="frame" x="60" y="278" width="255" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Red House">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +98,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRo-Sw-pAm">
-                                <rect key="frame" x="60" y="170" width="255" height="48"/>
+                                <rect key="frame" x="60" y="220" width="255" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Black House">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,7 +108,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te5-9n-QfC">
-                                <rect key="frame" x="60" y="286" width="255" height="48"/>
+                                <rect key="frame" x="60" y="336" width="255" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Blue House">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E0-0g-Xj8">
-                                <rect key="frame" x="60" y="402" width="255" height="48"/>
+                                <rect key="frame" x="60" y="452" width="255" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Yellow House">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,7 +148,7 @@
                             <constraint firstItem="IsN-sX-GAm" firstAttribute="trailing" secondItem="azA-KS-XhL" secondAttribute="trailing" constant="60" id="WFe-Ml-LX4"/>
                             <constraint firstItem="Te5-9n-QfC" firstAttribute="top" secondItem="azA-KS-XhL" secondAttribute="bottom" constant="10" id="Wbi-Ow-Jvn"/>
                             <constraint firstItem="9E0-0g-Xj8" firstAttribute="leading" secondItem="IsN-sX-GAm" secondAttribute="leading" constant="60" id="XGh-4F-m5H"/>
-                            <constraint firstItem="ZRo-Sw-pAm" firstAttribute="top" secondItem="QBx-Dy-A3Z" secondAttribute="bottom" constant="100" id="alG-bj-Vgq"/>
+                            <constraint firstItem="ZRo-Sw-pAm" firstAttribute="top" secondItem="QBx-Dy-A3Z" secondAttribute="bottom" constant="150" id="alG-bj-Vgq"/>
                             <constraint firstItem="iyQ-hs-me2" firstAttribute="top" secondItem="Te5-9n-QfC" secondAttribute="bottom" constant="10" id="av8-D2-lnJ"/>
                             <constraint firstItem="azA-KS-XhL" firstAttribute="top" secondItem="ZRo-Sw-pAm" secondAttribute="bottom" constant="10" id="hGn-gY-ya1"/>
                             <constraint firstItem="IsN-sX-GAm" firstAttribute="trailing" secondItem="QBx-Dy-A3Z" secondAttribute="trailing" constant="16" id="jya-fx-oWH"/>
@@ -167,7 +167,7 @@
                         <outlet property="greenButton" destination="iyQ-hs-me2" id="dqr-ph-Atl"/>
                         <outlet property="redButton" destination="azA-KS-XhL" id="fvR-nQ-van"/>
                         <outlet property="yellowButton" destination="9E0-0g-Xj8" id="b9V-79-H6V"/>
-                        <segue destination="KuF-86-LQg" kind="show" identifier="colourSelected" id="Jp0-db-nJA"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="colourSelected" id="Bvw-zm-YPW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPA-Vk-08L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -703,14 +703,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVM-N2-RTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1640.8" y="132.68365817091455"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="ouK-mB-R8c">
-            <objects>
-                <pageViewController storyboardIdentifier="InitialView" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="KuF-86-LQg" customClass="PageViewController" customModule="SST_House_Points_App" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-Sm-ZGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="878" y="-628"/>
         </scene>
     </scenes>
     <resources>
