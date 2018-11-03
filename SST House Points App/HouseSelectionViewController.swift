@@ -73,23 +73,6 @@ class HouseSelectionViewController: UIViewController {
         blueButton.layer.cornerRadius = 10
         greenButton.layer.cornerRadius = 10
         yellowButton.layer.cornerRadius = 10
-        let layer = CAGradientLayer()
-        layer.frame = view.bounds
-        view.layer.addSublayer(layer)
-        layer.colors = [UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1.0).cgColor, UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor, UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1.0).cgColor]
-        layer.startPoint = CGPoint(x: 0, y: 0)
-        layer.endPoint = CGPoint(x: 1, y: 1)
-        layer.opacity = 0.85
-        layer.zPosition = -1
-
-        let layer1 = CAGradientLayer()
-        layer1.frame = view.bounds
-        view.layer.addSublayer(layer1)
-        layer1.colors = [UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1.0).cgColor, UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0).cgColor, UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1.0).cgColor]
-        layer1.startPoint = CGPoint(x: 1, y: 0)
-        layer1.endPoint = CGPoint(x: 0, y: 1)
-        layer1.opacity = 0.85
-        layer1.zPosition = -1
     }
 
     /*
