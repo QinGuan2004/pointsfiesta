@@ -19,35 +19,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-aT-T4u" customClass="GIDSignInButton">
-                                <rect key="frame" x="16" y="166" width="343" height="451"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="cDq-3P-wx1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-ID-4Wi" customClass="GIDSignInButton">
+                                <rect key="frame" x="30" y="461" width="315" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="googleButtonTapped:" destination="0WN-sz-pZe" eventType="valueChanged" id="WD1-Wz-Egb"/>
-                                </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTX-SG-1mT">
-                                <rect key="frame" x="16" y="30" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start your journey, please sign into your Google Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-fe-Jxz">
+                                <rect key="frame" x="30" y="306" width="315" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vo-MD-XA5">
+                                <rect key="frame" x="30" y="39" width="315" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fss-P6-5EU" firstAttribute="bottom" secondItem="t3e-aT-T4u" secondAttribute="bottom" constant="50" id="6DD-Z2-aIq"/>
-                            <constraint firstItem="zTX-SG-1mT" firstAttribute="top" secondItem="fss-P6-5EU" secondAttribute="top" constant="10" id="6GO-Uv-KJT"/>
-                            <constraint firstItem="fss-P6-5EU" firstAttribute="trailing" secondItem="zTX-SG-1mT" secondAttribute="trailing" constant="16" id="H6q-vU-nvS"/>
-                            <constraint firstItem="t3e-aT-T4u" firstAttribute="leading" secondItem="fss-P6-5EU" secondAttribute="leading" constant="16" id="JMj-eU-O3o"/>
-                            <constraint firstItem="fss-P6-5EU" firstAttribute="trailing" secondItem="t3e-aT-T4u" secondAttribute="trailing" constant="16" id="aWQ-eB-86G"/>
-                            <constraint firstItem="t3e-aT-T4u" firstAttribute="top" secondItem="zTX-SG-1mT" secondAttribute="bottom" constant="100" id="ehh-tX-hVa"/>
-                            <constraint firstItem="zTX-SG-1mT" firstAttribute="leading" secondItem="fss-P6-5EU" secondAttribute="leading" constant="16" id="gfH-Br-ga7"/>
+                            <constraint firstItem="eIh-ID-4Wi" firstAttribute="top" secondItem="zyD-fe-Jxz" secondAttribute="bottom" constant="100" id="6eS-3l-FdH"/>
+                            <constraint firstItem="fss-P6-5EU" firstAttribute="bottom" secondItem="cDq-3P-wx1" secondAttribute="bottom" id="9QM-hh-Crw"/>
+                            <constraint firstItem="fss-P6-5EU" firstAttribute="bottom" secondItem="eIh-ID-4Wi" secondAttribute="bottom" constant="80" id="EVc-hR-vOr"/>
+                            <constraint firstItem="cDq-3P-wx1" firstAttribute="top" secondItem="hkM-up-GLI" secondAttribute="top" id="Lys-zh-nqb"/>
+                            <constraint firstItem="fss-P6-5EU" firstAttribute="trailing" secondItem="1Vo-MD-XA5" secondAttribute="trailing" constant="30" id="S6u-ht-pJD"/>
+                            <constraint firstItem="eIh-ID-4Wi" firstAttribute="leading" secondItem="fss-P6-5EU" secondAttribute="leading" constant="30" id="cZd-Rt-wvM"/>
+                            <constraint firstItem="1Vo-MD-XA5" firstAttribute="top" secondItem="fss-P6-5EU" secondAttribute="top" constant="19" id="f0Z-9t-tlu"/>
+                            <constraint firstAttribute="trailing" secondItem="zyD-fe-Jxz" secondAttribute="trailing" constant="30" id="hrI-IF-nju"/>
+                            <constraint firstItem="fss-P6-5EU" firstAttribute="trailing" secondItem="eIh-ID-4Wi" secondAttribute="trailing" constant="30" id="i9N-9B-vbv"/>
+                            <constraint firstItem="zyD-fe-Jxz" firstAttribute="centerY" secondItem="hkM-up-GLI" secondAttribute="centerY" id="jUq-76-rtQ"/>
+                            <constraint firstItem="zyD-fe-Jxz" firstAttribute="centerX" secondItem="hkM-up-GLI" secondAttribute="centerX" id="nGw-O5-zL2"/>
+                            <constraint firstItem="1Vo-MD-XA5" firstAttribute="leading" secondItem="fss-P6-5EU" secondAttribute="leading" constant="30" id="qkr-GE-Ekr"/>
+                            <constraint firstItem="cDq-3P-wx1" firstAttribute="leading" secondItem="fss-P6-5EU" secondAttribute="leading" id="r1T-8i-REg"/>
+                            <constraint firstItem="fss-P6-5EU" firstAttribute="trailing" secondItem="cDq-3P-wx1" secondAttribute="trailing" id="s7n-MX-6co"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fss-P6-5EU"/>
                     </view>
                     <connections>
-                        <outlet property="Points" destination="zTX-SG-1mT" id="7yL-I4-54q"/>
-                        <outlet property="googleSignInButton" destination="t3e-aT-T4u" id="yYK-eh-plN"/>
                         <segue destination="KJS-GP-ybY" kind="show" identifier="signInDone" id="5vP-8Q-uy1"/>
                     </connections>
                 </viewController>
@@ -695,4 +706,7 @@
             <point key="canvasLocation" x="878" y="-628"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background Image" width="324.5" height="655"/>
+    </resources>
 </document>
