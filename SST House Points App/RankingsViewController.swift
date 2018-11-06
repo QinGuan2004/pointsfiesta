@@ -11,10 +11,6 @@ import FirebaseDatabase
 
 class RankingsViewController: UIViewController {
 
-    let foregroundColour = UserDefaults.standard.colorForKey(key: "foregroundColour")
-    let backgroundColour = UserDefaults.standard.colorForKey(key: "backgroundColour")
-    let secondaryColour = UserDefaults.standard.colorForKey(key: "secondaryColour")
-
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var allView: UIView!
     @IBOutlet weak var blackPoints: UILabel!
@@ -27,12 +23,6 @@ class RankingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Loading the view
-        view.backgroundColor = backgroundColour
-        mainView.backgroundColor = secondaryColour
-        allView.backgroundColor = foregroundColour
-        mainView.layer.cornerRadius = 30
-        allView.layer.cornerRadius = 30
         // Do any additional setup after loading the view.
         //Downloading Points from Database
         ref = Database.database().reference()

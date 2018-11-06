@@ -14,10 +14,8 @@ import FirebaseDatabase
 
 class AnnouncementViewController: UIViewController {
 
-    let foregroundColour = UserDefaults.standard.colorForKey(key: "foregroundColour")
-    let backgroundColour = UserDefaults.standard.colorForKey(key: "backgroundColour")
-    let secondaryColour = UserDefaults.standard.colorForKey(key: "secondaryColour")
     let currentHouse = "\(UserDefaults.standard.object(forKey: "houseMember") ?? "No House")"
+    let backgroundColour = UserDefaults.standard.colorForKey(key: "foregroundColour")
 
     var ref: DatabaseReference!
     var HouseTitle: String = ""
@@ -28,9 +26,11 @@ class AnnouncementViewController: UIViewController {
     var allContent2: String = ""
     var allTitle3: String = ""
     var allContent3: String = ""
-    @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var allView: UIView!
 
+    
+    @IBOutlet weak var announcementView: UIView!
+    
+    
     //Announcement Labels
 
     @IBOutlet weak var houseTitle: UILabel!
@@ -48,6 +48,10 @@ class AnnouncementViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up Announcement View
+        announcementView.backgroundColor = backgroundColour
+        announcementView.layer.cornerRadius = 30
+        
         //Downloading from Firebase
         ref = Database.database().reference()
         switch currentHouse {
@@ -124,12 +128,7 @@ class AnnouncementViewController: UIViewController {
             self.allContent3 = (snapshot.value! as? String)!
             self.all3Content.text = self.allContent3
 
-        }        // Loading View
-        view.backgroundColor = backgroundColour
-        mainView.layer.cornerRadius = 30
-        mainView.backgroundColor = secondaryColour
-        allView.backgroundColor = foregroundColour
-        allView.layer.cornerRadius = 30
+        }
         // Do any additional setup after loading the view.
         //Loading Announcements
     }
