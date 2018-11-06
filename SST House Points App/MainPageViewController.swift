@@ -8,16 +8,21 @@
 
 import UIKit
 import FirebaseDatabase
+import Firebase
 
 class MainPageViewController: UIViewController {
     let foregroundColour = UserDefaults.standard.colorForKey(key: "foregroundColour")
     let backgroundColour = UserDefaults.standard.colorForKey(key: "backgroundColour")
     let secondaryColour = UserDefaults.standard.colorForKey(key: "secondaryColour")
     let currentHouse = "\(UserDefaults.standard.object(forKey: "houseMember") ?? "No House")"
+    let userEmail = "\(UserDefaults.standard.object(forKey: "email") ?? "No Email")"
+
     //Blank Alert
     let alert = UIAlertController(title: "Connection Error", message: "Please check your connection and try again.", preferredStyle: .alert)
     var ref: DatabaseReference!
-
+    var ref1: DocumentReference? = nil
+    let db = Firestore.firestore()
+    lazy var settings = db.settings
     @IBOutlet weak var iconLabel: UIImageView!
     @IBOutlet weak var mottoLabel: UILabel!
     @IBOutlet weak var captainLabel: UILabel!
@@ -43,136 +48,7 @@ class MainPageViewController: UIViewController {
         var meetingLocation = ""
         
         //Setting House Icon
-        switch currentHouse {
-        case "Black House":
-            ref = Database.database().reference()
-            addHouseIcon(house: "blackHouse")
-            ref.child("houseInfo").child("1").child("7").observeSingleEvent(of: .value) { (snapshot) in
-                houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = houseMotto
-                
-        // Section 2: House Details
-                self.ref.child("houseInfo").child("1").child("2").observeSingleEvent(of: .value) { (snapshot) in
-                    houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "\(houseCaptain)"
-                }
-                self.ref.child("houseInfo").child("1").child("3").observeSingleEvent(of: .value) { (snapshot) in
-                    viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
-                }
-                self.ref.child("houseInfo").child("1").child("4").observeSingleEvent(of: .value) { (snapshot) in
-                    houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "\(houseMaster)"
-                }
-                self.ref.child("houseInfo").child("1").child("6").observeSingleEvent(of: .value) { (snapshot) in
-                    meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "\(meetingLocation)"
-                }
-            }
-        case "Red House":
-            ref = Database.database().reference()
-            addHouseIcon(house: "redHouse")
-            ref.child("houseInfo").child("2").child("7").observeSingleEvent(of: .value) { (snapshot) in
-                houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = houseMotto
-        // Section 2: House Details
-                self.ref.child("houseInfo").child("2").child("2").observeSingleEvent(of: .value) { (snapshot) in
-                    houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "\(houseCaptain)"
-                }
-                self.ref.child("houseInfo").child("2").child("3").observeSingleEvent(of: .value) { (snapshot) in
-                    viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
-                }
-            self.ref.child("houseInfo").child("2").child("4").observeSingleEvent(of: .value) { (snapshot) in
-                    houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "\(houseMaster)"
-                }
-            self.ref.child("houseInfo").child("2").child("6").observeSingleEvent(of: .value) { (snapshot) in
-                    meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "\(meetingLocation)"
-                }
-            
-            }
-        case "Green House":
-            ref = Database.database().reference()
-            addHouseIcon(house: "greenHouse")
-            ref.child("houseInfo").child("3").child("7").observeSingleEvent(of: .value) { (snapshot) in
-                houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = houseMotto
-                
-        // Section 2: House Details
-                self.ref.child("houseInfo").child("3").child("2").observeSingleEvent(of: .value) { (snapshot) in
-                    houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "\(houseCaptain)"
-                }
-                self.ref.child("houseInfo").child("3").child("3").observeSingleEvent(of: .value) { (snapshot) in
-                    viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
-                }
-                self.ref.child("houseInfo").child("3").child("4").observeSingleEvent(of: .value) { (snapshot) in
-                    houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "\(houseMaster)"
-                }
-                self.ref.child("houseInfo").child("3").child("6").observeSingleEvent(of: .value) { (snapshot) in
-                    meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "\(meetingLocation)"
-                }
-            }
-        case "Blue House":
-            ref = Database.database().reference()
-            addHouseIcon(house: "blueHouse")
-            ref.child("houseInfo").child("4").child("7").observeSingleEvent(of: .value) { (snapshot) in
-                houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = houseMotto
-        //Section 2: House Details
-                self.ref.child("houseInfo").child("4").child("2").observeSingleEvent(of: .value) { (snapshot) in
-                    houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "\(houseCaptain)"
-                }
-                self.ref.child("houseInfo").child("4").child("3").observeSingleEvent(of: .value) { (snapshot) in
-                    viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
-                }
-                self.ref.child("houseInfo").child("4").child("4").observeSingleEvent(of: .value) { (snapshot) in
-                    houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "\(houseMaster)"
-                }
-                self.ref.child("houseInfo").child("4").child("6").observeSingleEvent(of: .value) { (snapshot) in
-                    meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "\(meetingLocation)"
-                }
-            }
-        case "Yellow House":
-            ref = Database.database().reference()
-            addHouseIcon(house: "yellowHouse")
-            ref.child("houseInfo").child("5").child("7").observeSingleEvent(of: .value) { (snapshot) in
-                houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = houseMotto
-        //Section 2: House Details
-                self.ref.child("houseInfo").child("5").child("2").observeSingleEvent(of: .value) { (snapshot) in
-                    houseCaptain = (snapshot.value! as? String)!
-                    self.captainLabel.text = "\(houseCaptain)"
-                }
-                self.ref.child("houseInfo").child("5").child("3").observeSingleEvent(of: .value) { (snapshot) in
-                    viceHouseCaptain = (snapshot.value! as? String)!
-                    self.viceCaptainLabel.text = "\(viceHouseCaptain)"
-                }
-                self.ref.child("houseInfo").child("5").child("4").observeSingleEvent(of: .value) { (snapshot) in
-                    houseMaster = (snapshot.value! as? String)!
-                    self.masterLabel.text = "\(houseMaster)"
-                }
-                self.ref.child("houseInfo").child("5").child("6").observeSingleEvent(of: .value) { (snapshot) in
-                    meetingLocation = (snapshot.value! as? String)!
-                    self.meetingLabel.text = "\(meetingLocation)"
-                }
-            }
-        default:
-            self.alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(self.alert, animated: true, completion: nil)
-        }
+        
         
         
     }

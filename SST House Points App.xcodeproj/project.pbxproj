@@ -13,10 +13,12 @@
 		250C5CAF20F9E8BD00129259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CAD20F9E8BD00129259 /* Main.storyboard */; };
 		250C5CB120F9E8BF00129259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CB020F9E8BF00129259 /* Assets.xcassets */; };
 		250C5CB420F9E8BF00129259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */; };
+		252A147B2192359B00FC395F /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252A147A2192359B00FC395F /* PageControlViewController.swift */; };
 		253244832133016300508027 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253244822133016300508027 /* AnnouncementViewController.swift */; };
 		25371B1E212C760D00910227 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25371B1D212C760D00910227 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2563FB522180DD8E00F16D59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */; };
 		25B170E7211E9F020079955A /* HouseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B170E6211E9F020079955A /* HouseSelectionViewController.swift */; };
+		25C65F2621922C320073BC59 /* CurrentHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C65F2521922C320073BC59 /* CurrentHouseViewController.swift */; };
 		25D2404E2118403F00EC550C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2404D2118403F00EC550C /* SignInViewController.swift */; };
 		25DC2BCE21156D7A001D3DF2 /* RankingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */; };
 		ECFC79F50FCD3CE118C1C987 /* Pods_SST_House_Points_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FB902DD0537AF91B27F4D3 /* Pods_SST_House_Points_App.framework */; };
@@ -31,12 +33,14 @@
 		250C5CB020F9E8BF00129259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250C5CB320F9E8BF00129259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250C5CB520F9E8BF00129259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252A147A2192359B00FC395F /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageControlViewController.swift; path = "/Users/sebastianchoo/Documents/Points/SST House Points App/PageControlViewController.swift"; sourceTree = "<absolute>"; };
 		253244822133016300508027 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		25371B1D212C760D00910227 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		25545BA020FE079B00674B0E /* SST House Points App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SST House Points App.entitlements"; sourceTree = "<group>"; };
 		2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		257518B720FC7D08007C11BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		25B170E6211E9F020079955A /* HouseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSelectionViewController.swift; sourceTree = "<group>"; };
+		25C65F2521922C320073BC59 /* CurrentHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentHouseViewController.swift; path = ../CurrentHouseViewController.swift; sourceTree = "<group>"; };
 		25D2404D2118403F00EC550C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsViewController.swift; sourceTree = "<group>"; };
 		45FB902DD0537AF91B27F4D3 /* Pods_SST_House_Points_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SST_House_Points_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +87,13 @@
 				250C5CAD20F9E8BD00129259 /* Main.storyboard */,
 				25D2404D2118403F00EC550C /* SignInViewController.swift */,
 				25B170E6211E9F020079955A /* HouseSelectionViewController.swift */,
-				250C5CAB20F9E8BD00129259 /* MainPageViewController.swift */,
+				252A147A2192359B00FC395F /* PageControlViewController.swift */,
+				25C65F2521922C320073BC59 /* CurrentHouseViewController.swift */,
 				253244822133016300508027 /* AnnouncementViewController.swift */,
 				25DC2BCD21156D7A001D3DF2 /* RankingsViewController.swift */,
 				2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */,
 				250C5CB020F9E8BF00129259 /* Assets.xcassets */,
+				250C5CAB20F9E8BD00129259 /* MainPageViewController.swift */,
 				250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */,
 				250C5CB520F9E8BF00129259 /* Info.plist */,
 				250986F620F9E8F40003D8F6 /* userInfo.swift */,
@@ -233,19 +239,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SST House Points App/Pods-SST House Points App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -263,6 +281,8 @@
 			files = (
 				250C5CAC20F9E8BD00129259 /* MainPageViewController.swift in Sources */,
 				250986F720F9E8F40003D8F6 /* userInfo.swift in Sources */,
+				25C65F2621922C320073BC59 /* CurrentHouseViewController.swift in Sources */,
+				252A147B2192359B00FC395F /* PageControlViewController.swift in Sources */,
 				25DC2BCE21156D7A001D3DF2 /* RankingsViewController.swift in Sources */,
 				250C5CAA20F9E8BD00129259 /* AppDelegate.swift in Sources */,
 				25D2404E2118403F00EC550C /* SignInViewController.swift in Sources */,

@@ -21,7 +21,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             // Perform any operations on signed in user here.
             print("Successful!")
             UserDefaults.standard.set(user.userID, forKey: "userID") // For client-side use only!
-            UserDefaults.standard.set(user.authentication.idToken, forKey: "authenticationToken") // Safe to send to the server
+            UserDefaults.standard.set(user.authentication.idToken, forKey: "authenticationToken")
             UserDefaults.standard.set(user.profile.name, forKey: "name")
             UserDefaults.standard.set(user.profile.email, forKey: "email")
             // ...
@@ -56,6 +56,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         // Do any additional setup after loading the view.
         GIDSignIn.sharedInstance().clientID = "803179619735-g2pqb4rvenqpj9vrqsj98hqib19ioh0m.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
+        
     }
 
     // ...

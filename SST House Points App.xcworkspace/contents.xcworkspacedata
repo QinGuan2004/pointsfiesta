@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/sebastianchoo/Documents/Points/SST House Points App/PageControlViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:SST House Points App.xcodeproj">
    </FileRef>
    <FileRef

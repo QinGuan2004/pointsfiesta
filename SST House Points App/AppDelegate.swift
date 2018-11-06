@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         } else {
-            initialViewController = storyboard.instantiateViewController(withIdentifier: "Page1") as! MainPageViewController
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "PageController") as! PageControlViewController
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }

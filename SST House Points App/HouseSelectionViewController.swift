@@ -10,6 +10,8 @@
 //User Default
 
 import UIKit
+import FirebaseDatabase
+import Firebase
 
 class HouseSelectionViewController: UIViewController {
 
@@ -19,12 +21,46 @@ class HouseSelectionViewController: UIViewController {
     @IBOutlet weak var blueButton: UIButton!
     @IBOutlet weak var greenButton: UIButton!
     @IBOutlet weak var yellowButton: UIButton!
+    
+    var ref: DatabaseReference! = Database.database().reference()
+    var ref1: DocumentReference? = nil
+    let db = Firestore.firestore()
+    lazy var settings = db.settings
+    let userEmail = "\(UserDefaults.standard.object(forKey: "email") ?? "No Email")"
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Config Buttons
+        blackButton.backgroundColor = .black
+        redButton.backgroundColor = UIColor(red: 0.93, green: 0.13, blue: 0.05, alpha: 1.0)
+        blueButton.backgroundColor = UIColor(red: 0.00, green: 0.64, blue: 1.00, alpha: 1.0)
+        greenButton.backgroundColor = UIColor(red: 0.00, green: 0.60, blue: 0.00, alpha: 1.0)
+        yellowButton.backgroundColor = UIColor(red: 0.98, green: 0.89, blue: 0.20, alpha: 1.0)
+        blackButton.layer.cornerRadius = 10
+        redButton.layer.cornerRadius = 10
+        blueButton.layer.cornerRadius = 10
+        greenButton.layer.cornerRadius = 10
+        yellowButton.layer.cornerRadius = 10
+        
+        // Firebase FireStore
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+        
+    }
+    
     @IBAction func blackPressed(_ sender: Any) {
         UserDefaults.standard.setColor(color: UIColor(red: 0.01, green: 0.01, blue: 0.01, alpha: 1.0), forKey: "foregroundColour")
         UserDefaults.standard.setColor(color: UIColor(red: 0.41, green: 0.79, blue: 0.62, alpha: 1.0), forKey: "backgroundColour")
         UserDefaults.standard.setColor(color: UIColor(red: 0.16, green: 0.16, blue: 0.16, alpha: 1.0), forKey: "secondaryColour")
         UserDefaults.standard.set("Black House", forKey: "houseMember")
+        ref1 = db.collection("users").addDocument(data:
+            ["house": "Black House"]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(self.ref1!.documentID)")
+            }
+        }
         performSegue(withIdentifier: "colourSelected", sender: sender)
     }
 
@@ -60,20 +96,7 @@ class HouseSelectionViewController: UIViewController {
         performSegue(withIdentifier: "colourSelected", sender: sender)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Config Buttons
-        blackButton.backgroundColor = .black
-        redButton.backgroundColor = UIColor(red: 0.93, green: 0.13, blue: 0.05, alpha: 1.0)
-        blueButton.backgroundColor = UIColor(red: 0.00, green: 0.64, blue: 1.00, alpha: 1.0)
-        greenButton.backgroundColor = UIColor(red: 0.00, green: 0.60, blue: 0.00, alpha: 1.0)
-        yellowButton.backgroundColor = UIColor(red: 0.98, green: 0.89, blue: 0.20, alpha: 1.0)
-        blackButton.layer.cornerRadius = 10
-        redButton.layer.cornerRadius = 10
-        blueButton.layer.cornerRadius = 10
-        greenButton.layer.cornerRadius = 10
-        yellowButton.layer.cornerRadius = 10
-    }
+    
 
     /*
     // MARK: - Navigation
