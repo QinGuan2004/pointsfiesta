@@ -27,8 +27,16 @@ class AnnouncementViewController: UIViewController {
     var allTitle3: String = ""
     var allContent3: String = ""
 
+    let backgroundBlack: UIImage = UIImage(named: "ShortBackground.002")!
+    let backgroundYellow: UIImage = UIImage(named: "ShortBackground.005")!
+    let backgroundGreen: UIImage = UIImage(named: "ShortBackground.004")!
+    let backgroundRed: UIImage = UIImage(named: "ShortBackground.003")!
+    let backgroundBlue: UIImage = UIImage(named: "ShortBackground.001")!
     
-    @IBOutlet weak var announcementView: UIView!
+    @IBOutlet weak var announcement1: UIView!
+    @IBOutlet weak var announcement2: UIView!
+    @IBOutlet weak var announcement3: UIView!
+    @IBOutlet weak var announcement4: UIView!
     
     
     //Announcement Labels
@@ -41,21 +49,26 @@ class AnnouncementViewController: UIViewController {
     @IBOutlet weak var all2Content: UILabel!
     @IBOutlet weak var all3Title: UILabel!
     @IBOutlet weak var all3Content: UILabel!
-
-    func getAnnouncement() {
-
-    }
-
+    
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Setting up Announcement View
-        announcementView.backgroundColor = backgroundColour
-        announcementView.layer.cornerRadius = 30
-        
+        announcement1.backgroundColor = backgroundColour
+        announcement1.layer.cornerRadius = 20
+        announcement2.backgroundColor = backgroundColour
+        announcement2.layer.cornerRadius = 20
+        announcement3.backgroundColor = backgroundColour
+        announcement3.layer.cornerRadius = 20
+        announcement4.backgroundColor = backgroundColour
+        announcement4.layer.cornerRadius = 20
         //Downloading from Firebase
         ref = Database.database().reference()
         switch currentHouse {
         case "Black House":
+            backgroundImage.image = backgroundBlack
             ref.child("announcementSent").child("1").child("1").observeSingleEvent(of: .value) { (snapshot) in
                 self.HouseTitle = (snapshot.value! as? String)!
                 self.houseTitle.text = self.HouseTitle
@@ -65,6 +78,7 @@ class AnnouncementViewController: UIViewController {
                 self.houseContent.text = self.HouseContent
             }
         case "Red House":
+            backgroundImage.image = backgroundRed
             ref.child("announcementSent").child("2").child("1").observeSingleEvent(of: .value) { (snapshot) in
                 self.HouseTitle = (snapshot.value! as? String)!
                 self.houseTitle.text = self.HouseTitle
@@ -74,6 +88,7 @@ class AnnouncementViewController: UIViewController {
                 self.houseContent.text = self.HouseContent
             }
         case "Green House":
+            backgroundImage.image = backgroundGreen
             ref.child("announcementSent").child("3").child("1").observeSingleEvent(of: .value) { (snapshot) in
                 self.HouseTitle = (snapshot.value! as? String)!
                 self.houseTitle.text = self.HouseTitle
@@ -83,6 +98,7 @@ class AnnouncementViewController: UIViewController {
                 self.houseContent.text = self.HouseContent
             }
         case "Blue House":
+            backgroundImage.image = backgroundBlue
             ref.child("announcementSent").child("4").child("1").observeSingleEvent(of: .value) { (snapshot) in
                 self.HouseTitle = (snapshot.value! as? String)!
                 self.houseTitle.text = self.HouseTitle
@@ -92,6 +108,7 @@ class AnnouncementViewController: UIViewController {
                 self.houseContent.text = self.HouseContent
             }
         case "Yellow House":
+            backgroundImage.image = backgroundYellow
             ref.child("announcementSent").child("5").child("1").observeSingleEvent(of: .value) { (snapshot) in
                 self.HouseTitle = (snapshot.value! as? String)!
                 self.houseTitle.text = self.HouseTitle

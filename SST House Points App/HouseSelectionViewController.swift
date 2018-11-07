@@ -7,7 +7,6 @@
 //
 
 //User Default
-//User Default
 
 import UIKit
 import FirebaseDatabase
@@ -31,11 +30,6 @@ class HouseSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Config Buttons
-        blackButton.backgroundColor = .black
-        redButton.backgroundColor = UIColor(red: 0.93, green: 0.13, blue: 0.05, alpha: 1.0)
-        blueButton.backgroundColor = UIColor(red: 0.00, green: 0.64, blue: 1.00, alpha: 1.0)
-        greenButton.backgroundColor = UIColor(red: 0.00, green: 0.60, blue: 0.00, alpha: 1.0)
-        yellowButton.backgroundColor = UIColor(red: 0.98, green: 0.89, blue: 0.20, alpha: 1.0)
         blackButton.layer.cornerRadius = 10
         redButton.layer.cornerRadius = 10
         blueButton.layer.cornerRadius = 10

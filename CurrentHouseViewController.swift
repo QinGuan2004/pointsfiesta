@@ -24,11 +24,11 @@ class CurrentHouseViewController: UIViewController {
     @IBOutlet weak var meetingLabel: UILabel!
     
     
-    let backgroundBlack: UIImage = UIImage(named: "blackLongBackground")!
-    let backgroundYellow: UIImage = UIImage(named: "yellowLongBackground")!
-    let backgroundGreen: UIImage = UIImage(named: "greenLongBackground")!
-    let backgroundRed: UIImage = UIImage(named: "redLongBackground")!
-    let backgroundBlue: UIImage = UIImage(named: "blueLongBackground")!
+    let backgroundBlack: UIImage = UIImage(named: "LongBackgrounds.002")!
+    let backgroundYellow: UIImage = UIImage(named: "LongBackgrounds.005")!
+    let backgroundGreen: UIImage = UIImage(named: "LongBackgrounds.004")!
+    let backgroundRed: UIImage = UIImage(named: "LongBackgrounds.003")!
+    let backgroundBlue: UIImage = UIImage(named: "LongBackgrounds.001")!
     
     var houseMotto: String!
     var houseCaptain: String!
@@ -55,9 +55,9 @@ class CurrentHouseViewController: UIViewController {
             
             ref.child("houseInfo").child("1").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = self.houseMotto
+                self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
                 
-                self.ref.child("houseInfo").child("1").child("2").observeSingleEvent(of: .value) { (snapshot) in
+            self.ref.child("houseInfo").child("1").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     self.houseCaptain = (snapshot.value! as? String)!
                     self.captainLabel.text = self.houseCaptain
                 }
@@ -82,7 +82,7 @@ class CurrentHouseViewController: UIViewController {
             
             ref.child("houseInfo").child("2").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = self.houseMotto
+                self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
                 // Section 2: House Details
                 self.ref.child("houseInfo").child("2").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     self.houseCaptain = (snapshot.value! as? String)!
@@ -110,7 +110,7 @@ class CurrentHouseViewController: UIViewController {
             addHouseIcon(house: "greenHouse")
             ref.child("houseInfo").child("3").child("7").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
-                self.mottoLabel.text = self.houseMotto
+                self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
                 
                 // Section 2: House Details
                 self.ref.child("houseInfo").child("3").child("2").observeSingleEvent(of: .value) { (snapshot) in
