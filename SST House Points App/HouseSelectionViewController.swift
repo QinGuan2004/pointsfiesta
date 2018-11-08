@@ -65,6 +65,7 @@ class HouseSelectionViewController: UIViewController {
         blueView.layer.borderWidth = 0
         greenView.layer.borderWidth = 0
         yellowView.layer.borderWidth = 0
+        blackView.layer.borderWidth = 0
     }
 
     
@@ -78,6 +79,7 @@ class HouseSelectionViewController: UIViewController {
         redView.layer.borderWidth = 0
         greenView.layer.borderWidth = 0
         yellowView.layer.borderWidth = 0
+        blackView.layer.borderWidth = 0
     }
 
     @IBAction func greenTap(_ sender: Any) {
@@ -90,6 +92,7 @@ class HouseSelectionViewController: UIViewController {
         redView.layer.borderWidth = 0
         blueView.layer.borderWidth = 0
         yellowView.layer.borderWidth = 0
+        blackView.layer.borderWidth = 0
     }
 
     
@@ -103,7 +106,7 @@ class HouseSelectionViewController: UIViewController {
         redView.layer.borderWidth = 0
         blueView.layer.borderWidth = 0
         greenView.layer.borderWidth = 0
-        yellowView.layer.borderWidth = 0
+        blackView.layer.borderWidth = 0
     }
 
     

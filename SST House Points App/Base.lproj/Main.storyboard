@@ -240,7 +240,7 @@
                                             <constraint firstItem="Ct8-iv-wHd" firstAttribute="top" secondItem="by4-F3-d1W" secondAttribute="top" id="wVw-Z1-vad"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="2Vq-uO-kaP" appends="YES" id="Ge2-yB-6by"/>
+                                            <outletCollection property="gestureRecognizers" destination="s4b-N5-MWL" appends="YES" id="xEy-ST-CVw"/>
                                         </connections>
                                     </view>
                                 </subviews>
@@ -282,7 +282,7 @@
                         <outlet property="continueLabel" destination="gpJ-50-Of9" id="M57-hp-fag"/>
                         <outlet property="greenView" destination="9iq-PF-a2j" id="uFq-KT-eWc"/>
                         <outlet property="redView" destination="PLy-Oq-oxx" id="DYb-8u-4ii"/>
-                        <outlet property="yellowView" destination="by4-F3-d1W" id="WFO-XN-pNV"/>
+                        <outlet property="yellowView" destination="by4-F3-d1W" id="ay2-Du-Wug"/>
                         <segue destination="RmA-6v-Mcm" kind="show" identifier="houseSelected" id="Vet-Wo-Obe"/>
                     </connections>
                 </viewController>
@@ -307,9 +307,9 @@
                         <action selector="blueTap:" destination="KJS-GP-ybY" id="RFn-Wc-06I"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="2Vq-uO-kaP">
+                <tapGestureRecognizer id="s4b-N5-MWL">
                     <connections>
-                        <action selector="yellowTap:" destination="KJS-GP-ybY" id="l3e-mz-Kqm"/>
+                        <action selector="yellowTap:" destination="KJS-GP-ybY" id="MV4-gN-vpa"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -327,7 +327,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rankings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKM-hO-kMa">
-                                <rect key="frame" x="10" y="30" width="355" height="30"/>
+                                <rect key="frame" x="10" y="35" width="355" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -577,7 +577,7 @@
                             <constraint firstItem="gnv-rn-uiI" firstAttribute="leading" secondItem="FFB-6i-MLO" secondAttribute="leading" id="CY4-Qy-A1v"/>
                             <constraint firstItem="TKM-hO-kMa" firstAttribute="leading" secondItem="FFB-6i-MLO" secondAttribute="leading" constant="10" id="ILx-yb-z1s"/>
                             <constraint firstItem="FFB-6i-MLO" firstAttribute="trailing" secondItem="TKM-hO-kMa" secondAttribute="trailing" constant="10" id="LXb-yO-wAR"/>
-                            <constraint firstItem="TKM-hO-kMa" firstAttribute="top" secondItem="FFB-6i-MLO" secondAttribute="top" constant="10" id="QCE-41-neS"/>
+                            <constraint firstItem="TKM-hO-kMa" firstAttribute="top" secondItem="FFB-6i-MLO" secondAttribute="top" constant="15" id="QCE-41-neS"/>
                             <constraint firstItem="FFB-6i-MLO" firstAttribute="trailing" secondItem="Ss0-79-AiA" secondAttribute="trailing" constant="10" id="erL-xP-qAQ"/>
                             <constraint firstItem="Ss0-79-AiA" firstAttribute="leading" secondItem="FFB-6i-MLO" secondAttribute="leading" constant="10" id="f7M-Od-n8Y"/>
                             <constraint firstItem="gnv-rn-uiI" firstAttribute="top" secondItem="ynf-j4-aEF" secondAttribute="top" id="fAC-xA-dr5"/>
@@ -768,7 +768,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Announcements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-fb-c44">
-                                <rect key="frame" x="10" y="50" width="355" height="30"/>
+                                <rect key="frame" x="10" y="35" width="355" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -902,7 +902,7 @@
                             <constraint firstItem="0Rs-Aw-Lnz" firstAttribute="trailing" secondItem="yja-iK-Cdt" secondAttribute="trailing" constant="10" id="XbP-6Q-kkg"/>
                             <constraint firstItem="TMr-Po-i02" firstAttribute="top" secondItem="AD7-Id-Ydi" secondAttribute="top" id="dF9-Jj-PwD"/>
                             <constraint firstItem="TWc-fb-c44" firstAttribute="leading" secondItem="0Rs-Aw-Lnz" secondAttribute="leading" constant="10" id="kM6-8w-YSJ"/>
-                            <constraint firstItem="TWc-fb-c44" firstAttribute="top" secondItem="0Rs-Aw-Lnz" secondAttribute="top" constant="30" id="r9N-KD-ylY"/>
+                            <constraint firstItem="TWc-fb-c44" firstAttribute="top" secondItem="0Rs-Aw-Lnz" secondAttribute="top" constant="15" id="r9N-KD-ylY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Rs-Aw-Lnz"/>
                     </view>
