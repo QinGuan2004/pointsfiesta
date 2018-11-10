@@ -12,10 +12,10 @@
 		250C5CAF20F9E8BD00129259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CAD20F9E8BD00129259 /* Main.storyboard */; };
 		250C5CB420F9E8BF00129259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */; };
 		252A147B2192359B00FC395F /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252A147A2192359B00FC395F /* PageControlViewController.swift */; };
-		252A147D2192AB3D00FC395F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252A147C2192AB3D00FC395F /* Assets.xcassets */; };
 		253244832133016300508027 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253244822133016300508027 /* AnnouncementViewController.swift */; };
 		25371B1E212C760D00910227 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25371B1D212C760D00910227 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2563FB522180DD8E00F16D59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */; };
+		2597F38721974C8900F3BFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2597F38621974C8800F3BFA9 /* Assets.xcassets */; };
 		25B170E7211E9F020079955A /* HouseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B170E6211E9F020079955A /* HouseSelectionViewController.swift */; };
 		25C65F2621922C320073BC59 /* CurrentHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C65F2521922C320073BC59 /* CurrentHouseViewController.swift */; };
 		25D2404E2118403F00EC550C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2404D2118403F00EC550C /* SignInViewController.swift */; };
@@ -31,12 +31,12 @@
 		250C5CB320F9E8BF00129259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250C5CB520F9E8BF00129259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		252A147A2192359B00FC395F /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageControlViewController.swift; path = "/Users/sebastianchoo/Documents/Points/SST House Points App/PageControlViewController.swift"; sourceTree = "<absolute>"; };
-		252A147C2192AB3D00FC395F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253244822133016300508027 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 		25371B1D212C760D00910227 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		25545BA020FE079B00674B0E /* SST House Points App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SST House Points App.entitlements"; sourceTree = "<group>"; };
 		2563FB512180DD8D00F16D59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		257518B720FC7D08007C11BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2597F38621974C8800F3BFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25B170E6211E9F020079955A /* HouseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSelectionViewController.swift; sourceTree = "<group>"; };
 		25C65F2521922C320073BC59 /* CurrentHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentHouseViewController.swift; path = ../CurrentHouseViewController.swift; sourceTree = "<group>"; };
 		25D2404D2118403F00EC550C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				250C5CB220F9E8BF00129259 /* LaunchScreen.storyboard */,
 				250C5CB520F9E8BF00129259 /* Info.plist */,
 				250986F620F9E8F40003D8F6 /* userInfo.swift */,
-				252A147C2192AB3D00FC395F /* Assets.xcassets */,
+				2597F38621974C8800F3BFA9 /* Assets.xcassets */,
 			);
 			path = "SST House Points App";
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			files = (
 				250C5CB420F9E8BF00129259 /* LaunchScreen.storyboard in Resources */,
 				2563FB522180DD8E00F16D59 /* GoogleService-Info.plist in Resources */,
-				252A147D2192AB3D00FC395F /* Assets.xcassets in Resources */,
+				2597F38721974C8900F3BFA9 /* Assets.xcassets in Resources */,
 				250C5CAF20F9E8BD00129259 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

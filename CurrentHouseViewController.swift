@@ -46,6 +46,20 @@ class CurrentHouseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let connectedRef = Database.database().reference(withPath: ".info/connected")
+        connectedRef.observe(.value, with: { snapshot in
+            if snapshot.value as? Bool ?? false {
+                print("Connected")
+            } else {
+                print("Not connected")
+                self.alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(self.alert, animated: true, completion: nil)
+            }
+        })
+
+        
         switch currentHouse {
         case "Black House":
             ref = Database.database().reference()
@@ -53,10 +67,10 @@ class CurrentHouseViewController: UIViewController {
             
             backgroundImage.image = backgroundBlack
             
-            ref.child("houseInfo").child("1").child("7").observeSingleEvent(of: .value) { (snapshot) in
+            ref.child("houseInfo").child("1").child("6").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
-                
+                }
             self.ref.child("houseInfo").child("1").child("2").observeSingleEvent(of: .value) { (snapshot) in
                     self.houseCaptain = (snapshot.value! as? String)!
                     self.captainLabel.text = self.houseCaptain
@@ -69,18 +83,17 @@ class CurrentHouseViewController: UIViewController {
                     self.houseMaster = (snapshot.value! as? String)!
                     self.masterLabel.text = self.houseMaster
                 }
-                self.ref.child("houseInfo").child("1").child("6").observeSingleEvent(of: .value) { (snapshot) in
+                self.ref.child("houseInfo").child("1").child("5").observeSingleEvent(of: .value) { (snapshot) in
                     self.meetingLocation = (snapshot.value! as? String)!
                     self.meetingLabel.text = self.meetingLocation
                 }
-            }
         case "Red House":
             ref = Database.database().reference()
             addHouseIcon(house: "redHouse")
             
             backgroundImage.image = backgroundRed
             
-            ref.child("houseInfo").child("2").child("7").observeSingleEvent(of: .value) { (snapshot) in
+            ref.child("houseInfo").child("2").child("6").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
                 // Section 2: House Details
@@ -96,7 +109,7 @@ class CurrentHouseViewController: UIViewController {
                     self.houseMaster = (snapshot.value! as? String)!
                     self.masterLabel.text = self.houseMaster
                 }
-                self.ref.child("houseInfo").child("2").child("6").observeSingleEvent(of: .value) { (snapshot) in
+                self.ref.child("houseInfo").child("2").child("5").observeSingleEvent(of: .value) { (snapshot) in
                     self.meetingLocation = (snapshot.value! as? String)!
                     self.meetingLabel.text = self.meetingLocation
                 }
@@ -108,7 +121,7 @@ class CurrentHouseViewController: UIViewController {
             backgroundImage.image = backgroundGreen
             
             addHouseIcon(house: "greenHouse")
-            ref.child("houseInfo").child("3").child("7").observeSingleEvent(of: .value) { (snapshot) in
+            ref.child("houseInfo").child("3").child("6").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = "\"\(self.houseMotto ?? "")\""
                 
@@ -125,7 +138,7 @@ class CurrentHouseViewController: UIViewController {
                     self.houseMaster = (snapshot.value! as? String)!
                     self.masterLabel.text = self.houseMaster
                 }
-                self.ref.child("houseInfo").child("3").child("6").observeSingleEvent(of: .value) { (snapshot) in
+                self.ref.child("houseInfo").child("3").child("5").observeSingleEvent(of: .value) { (snapshot) in
                     self.meetingLocation = (snapshot.value! as? String)!
                     self.meetingLabel.text = self.meetingLocation
                 }
@@ -136,7 +149,7 @@ class CurrentHouseViewController: UIViewController {
             
             backgroundImage.image = backgroundBlue
 
-            ref.child("houseInfo").child("4").child("7").observeSingleEvent(of: .value) { (snapshot) in
+            ref.child("houseInfo").child("4").child("6").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = self.houseMotto
                 //Section 2: House Details
@@ -152,7 +165,7 @@ class CurrentHouseViewController: UIViewController {
                     self.houseMaster = (snapshot.value! as? String)!
                     self.masterLabel.text = self.houseMaster
                 }
-                self.ref.child("houseInfo").child("4").child("6").observeSingleEvent(of: .value) { (snapshot) in
+                self.ref.child("houseInfo").child("4").child("5").observeSingleEvent(of: .value) { (snapshot) in
                     self.meetingLocation = (snapshot.value! as? String)!
                     self.meetingLabel.text = self.meetingLocation
                 }
@@ -163,7 +176,7 @@ class CurrentHouseViewController: UIViewController {
             
             backgroundImage.image = backgroundYellow
 
-            ref.child("houseInfo").child("5").child("7").observeSingleEvent(of: .value) { (snapshot) in
+            ref.child("houseInfo").child("5").child("6").observeSingleEvent(of: .value) { (snapshot) in
                 self.houseMotto = (snapshot.value! as? String)!
                 self.mottoLabel.text = self.houseMotto
                 //Section 2: House Details
@@ -179,21 +192,15 @@ class CurrentHouseViewController: UIViewController {
                     self.houseMaster = (snapshot.value! as? String)!
                     self.masterLabel.text = self.houseMaster
                 }
-                self.ref.child("houseInfo").child("5").child("6").observeSingleEvent(of: .value) { (snapshot) in
+                self.ref.child("houseInfo").child("5").child("5").observeSingleEvent(of: .value) { (snapshot) in
                     self.meetingLocation = (snapshot.value! as? String)!
                     self.meetingLabel.text = self.meetingLocation
                 }
             }
         default:
-            self.alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(self.alert, animated: true, completion: nil)
+           return
         }
-        // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -203,5 +210,4 @@ class CurrentHouseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
+    }
