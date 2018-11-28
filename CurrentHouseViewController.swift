@@ -37,28 +37,29 @@ class CurrentHouseViewController: UIViewController {
     var houseMaster: String!
     
     var ref: DatabaseReference!
-    
+
     func addHouseIcon(house: String) {
         var icon: UIImage!
         icon = UIImage(named: house)
         iconLabel.image = icon
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Database.database().isPersistenceEnabled = true
         let connectedRef = Database.database().reference(withPath: ".info/connected")
         connectedRef.observe(.value, with: { snapshot in
-            if snapshot.value as? Bool ?? false {
+            if (snapshot.value as! Bool) {
                 print("Connected")
-            } else {
-                print("Not connected")
                 self.alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                 }))
                 self.present(self.alert, animated: true, completion: nil)
+            } else {
+                print("Not Connected")
             }
         })
-
         
         switch currentHouse {
         case "Black House":
